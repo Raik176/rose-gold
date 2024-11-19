@@ -46,9 +46,14 @@ dependencies {
     minecraft("com.mojang:minecraft:$minecraft")
     mappings(loom.officialMojangMappings())
     modImplementation("net.fabricmc:fabric-loader:${mod.dep("fabric_loader")}")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:${common.mod.dep("fabric_api")}")
 
     commonBundle(project(common.path, "namedElements")) { isTransitive = false }
     shadowBundle(project(common.path, "transformProductionFabric")) { isTransitive = false }
+}
+
+fabricApi {
+    configureDataGeneration()
 }
 
 loom {

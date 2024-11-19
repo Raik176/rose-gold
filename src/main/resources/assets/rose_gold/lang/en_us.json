@@ -1,0 +1,18 @@
+{
+  "tag.item.rose_gold.rose_gold_tool_materials": "Rose Gold Tool Materials",
+  "itemGroup.rose_gold": "Rose Gold",
+  "item.rose_gold.rose_gold_alloy": "Rose Gold Alloy",
+  "item.rose_gold.rose_gold_sword": "Rose Gold Sword",
+  "item.rose_gold.rose_gold_pickaxe": "Rose Gold Pickaxe",
+  "item.rose_gold.rose_gold_axe": "Rose Gold Axe",
+  "item.rose_gold.rose_gold_shovel": "Rose Gold Shovel",
+  "item.rose_gold.rose_gold_hoe": "Rose Gold Hoe",
+  "item.rose_gold.rose_gold_upgrade_smithing_template": "Rose Gold Upgrade",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "Iron Equipment",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "Rose Gold Alloy",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.additions_slot_description": "Add Rose Gold Alloy",
+  "item.rose_gold.rose_gold_helmet": "Rose Gold Helmet",
+  "item.rose_gold.rose_gold_chestplate": "Rose Gold Chestplate",
+  "item.rose_gold.rose_gold_leggings": "Rose Gold Leggings",
+  "item.rose_gold.rose_gold_boots": "Rose Gold Boots"
+}

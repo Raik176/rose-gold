@@ -45,6 +45,7 @@ configurations {
 }
 
 repositories {
+    mavenCentral()
     maven("https://maven.minecraftforge.net")
 }
 
@@ -54,7 +55,6 @@ dependencies {
     "forge"("net.minecraftforge:forge:$minecraft-${common.mod.dep("forge_loader")}")
     "io.github.llamalad7:mixinextras-forge:${mod.dep("mixin_extras")}".let {
         implementation(it)
-        include(it)
     }
 
     commonBundle(project(common.path, "namedElements")) { isTransitive = false }

@@ -4,10 +4,10 @@ plugins {
     id("architectury-plugin") version "3.4-SNAPSHOT" apply false
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
 }
-stonecutter active "1.20.6" /* [SC] DO NOT EDIT */
+stonecutter active "1.21.3" /* [SC] DO NOT EDIT */
 stonecutter.automaticPlatformConstants = true
 
-for (it in listOf("Mods", "Github", "Modrinth")) {
+for (it in listOf("Mods", "Github", "Modrinth", "Curseforge")) {
     stonecutter registerChiseled tasks.register("chiseledPublish$it", stonecutter.chiseled) {
         group = "publishing"
         ofTask("publish$it")
@@ -32,6 +32,13 @@ stonecutter registerChiseled tasks.register("chiseledClean", stonecutter.chisele
     group = "build"
     ofTask("clean")
 }
+
+stonecutter registerChiseled tasks.register("chiseledDatagen", stonecutter.chiseled) {
+    group = "build"
+    versions { branch, _ -> branch == "fabric" }
+    ofTask("runDatagen")
+}
+
 for (it in stonecutter.tree.branches) {
     if (it.id.isEmpty()) continue
     val loader = it.id.upperCaseFirst()

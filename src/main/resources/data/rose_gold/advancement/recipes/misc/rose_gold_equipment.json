@@ -1,0 +1,33 @@
+{
+  "parent": "rose_gold:recipes/root",
+  "criteria": {
+    "has_rose_gold_alloy": {
+      "conditions": {
+        "items": [
+          {
+            "items": "rose_gold:rose_gold_alloy"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_gold_alloy"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "rose_gold:rose_gold_axe_smithing",
+      "rose_gold:rose_gold_pickaxe_smithing",
+      "rose_gold:rose_gold_sword_smithing",
+      "rose_gold:rose_gold_shovel_smithing",
+      "rose_gold:rose_gold_hoe_smithing",
+      "rose_gold:rose_gold_helmet_smithing",
+      "rose_gold:rose_gold_chestplate_smithing",
+      "rose_gold:rose_gold_leggings_smithing",
+      "rose_gold:rose_gold_boots_smithing"
+    ]
+  }
+}

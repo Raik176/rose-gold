@@ -15,7 +15,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "${group}.${id}.fabric.TemplateModFabric"
+      "${group}.${id}.fabric.RoseGoldFabric"
+    ],
+    "fabric-datagen": [
+      "${group}.${id}.fabric.RoseGoldDatagen"
     ]
   },
   "mixins": [

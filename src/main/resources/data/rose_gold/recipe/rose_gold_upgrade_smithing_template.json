@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "rose_gold:rose_gold_upgrade_smithing_template",
+    "B": "minecraft:iron_ingot",
+    "C": "#minecraft:stone_crafting_materials"
+  },
+  "pattern": [
+    "BAB",
+    "BCB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "rose_gold:rose_gold_upgrade_smithing_template"
+  }
+}
