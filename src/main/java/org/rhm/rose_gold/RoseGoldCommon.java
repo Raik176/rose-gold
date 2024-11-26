@@ -111,8 +111,5 @@ public class RoseGoldCommon {
 
 	public static void init() {
 		ItemRegistry.init();
-		ItemStack item = null;
-		Level world = null;
-		item.enchant(world.registryAccess().get(Registries.ENCHANTMENT).get().value().get(Enchantments.AQUA_AFFINITY).get(),1);
 	}
 }

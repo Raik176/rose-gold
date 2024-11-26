@@ -10,6 +10,7 @@
   "item.rose_gold.rose_gold_upgrade_smithing_template": "Rose Gold Upgrade",
   "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "Iron Equipment",
   "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "Rose Gold Alloy",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "Add iron armor, weapon or tool",
   "item.rose_gold.smithing_template.rose_gold_upgrade.additions_slot_description": "Add Rose Gold Alloy",
   "item.rose_gold.rose_gold_helmet": "Rose Gold Helmet",
   "item.rose_gold.rose_gold_chestplate": "Rose Gold Chestplate",

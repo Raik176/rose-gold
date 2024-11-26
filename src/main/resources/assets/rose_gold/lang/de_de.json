@@ -1,0 +1,19 @@
+{
+  "tag.item.rose_gold.rose_gold_tool_materials": "Roségold Werkzeug Materialien",
+  "itemGroup.rose_gold": "Roségold",
+  "item.rose_gold.rose_gold_alloy": "Roségoldlegierung",
+  "item.rose_gold.rose_gold_sword": "Roségoldschwert",
+  "item.rose_gold.rose_gold_pickaxe": "Roségoldspitzhacke",
+  "item.rose_gold.rose_gold_axe": "Roségoldaxt",
+  "item.rose_gold.rose_gold_shovel": "Roségoldschaufel",
+  "item.rose_gold.rose_gold_hoe": "Roségoldhacke",
+  "item.rose_gold.rose_gold_upgrade_smithing_template": "Roségoldaufwertung",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "Eisenausrüstung",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "Roségoldlegierung",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "Rüstungsteil, Werkzeug oder Schwert aus Eisen hinzufügen",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.additions_slot_description": "Roségoldlegierung hinzufügen",
+  "item.rose_gold.rose_gold_helmet": "Roségoldhelm",
+  "item.rose_gold.rose_gold_chestplate": "Roségoldlegierungharnisch",
+  "item.rose_gold.rose_gold_leggings": "Roségoldbeinschutz",
+  "item.rose_gold.rose_gold_boots": "Roségoldstiefel"
+}
