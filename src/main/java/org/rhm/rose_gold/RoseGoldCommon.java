@@ -1,6 +1,5 @@
 package org.rhm.rose_gold;
 
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 
@@ -9,7 +8,8 @@ import net.minecraft.tags.TagKey;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.ItemEnchantments;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
@@ -111,5 +111,8 @@ public class RoseGoldCommon {
 
 	public static void init() {
 		ItemRegistry.init();
+		ItemStack item = null;
+		Level world = null;
+		item.enchant(world.registryAccess().get(Registries.ENCHANTMENT).get().value().get(Enchantments.AQUA_AFFINITY).get(),1);
 	}
 }
