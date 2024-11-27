@@ -1,0 +1,19 @@
+{
+  "tag.item.rose_gold.rose_gold_tool_materials": "Rosy Aurum Tool Matters",
+  "itemGroup.rose_gold": "Rosy Aurum",
+  "item.rose_gold.rose_gold_alloy": "Rosy Aurum Alloy",
+  "item.rose_gold.rose_gold_sword": "Rosy Aurum Sword",
+  "item.rose_gold.rose_gold_pickaxe": "Rosy Aurum Pickaxe",
+  "item.rose_gold.rose_gold_axe": "Rosy Aurum Axe",
+  "item.rose_gold.rose_gold_shovel": "Rosy Aurum Spade",
+  "item.rose_gold.rose_gold_hoe": "Rosy Aurum Hoe",
+  "item.rose_gold.rose_gold_upgrade_smithing_template": "Rosy Aurum Upgradeth",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "Iron Equipment",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "Rosy Aurum Alloy",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "Addeth iron armour, weapon or implement",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.additions_slot_description": "Addeth rosy aurum alloy",
+  "item.rose_gold.rose_gold_helmet": "Rosy Aurum Helmet",
+  "item.rose_gold.rose_gold_chestplate": "Rosy Aurum Breastplate",
+  "item.rose_gold.rose_gold_leggings": "Rosy Aurum Greaves",
+  "item.rose_gold.rose_gold_boots": "Rosy Aurum Sabatons"
+}
