@@ -7,7 +7,7 @@ import net.minecraft.world.item.Item;
 public class RoseGoldUtils {
     public static ResourceLocation id(String path) {
         //? if <1.21 {
-        /*return new ResourceLocation(MOD_ID, path);
+        /*return new ResourceLocation(RoseGoldCommon.MOD_ID, path);
          *///?} else
         return ResourceLocation.fromNamespaceAndPath(RoseGoldCommon.MOD_ID, path);
     }

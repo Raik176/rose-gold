@@ -22,7 +22,7 @@ stonecutter {
         vcsVersion = "1.21.3"
         branch("fabric")
         branch("forge")
-        branch("neoforge") { versions("1.21.3") }
+        branch("neoforge")
     }
 }
 

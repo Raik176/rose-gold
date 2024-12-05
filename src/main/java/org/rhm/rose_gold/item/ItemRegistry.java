@@ -6,10 +6,9 @@ import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
-import org.rhm.rose_gold.RoseGoldBaseImpl;
 import org.rhm.rose_gold.RoseGoldCommon;
+import org.rhm.rose_gold.RoseGoldUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -37,17 +36,17 @@ public class ItemRegistry {
                     Component.translatable(Util.makeDescriptionId("item", RoseGoldUtils.id("smithing_template.rose_gold_upgrade.base_slot_description"))),
                     Component.translatable(Util.makeDescriptionId("item", RoseGoldUtils.id("smithing_template.rose_gold_upgrade.additions_slot_description"))),
                     List.of(
-                            ResourceLocation.withDefaultNamespace("item/empty_armor_slot_helmet"),
-                            ResourceLocation.withDefaultNamespace("item/empty_slot_sword"),
-                            ResourceLocation.withDefaultNamespace("item/empty_armor_slot_chestplate"),
-                            ResourceLocation.withDefaultNamespace("item/empty_slot_pickaxe"),
-                            ResourceLocation.withDefaultNamespace("item/empty_armor_slot_leggings"),
-                            ResourceLocation.withDefaultNamespace("item/empty_slot_axe"),
-                            ResourceLocation.withDefaultNamespace("item/empty_armor_slot_boots"),
-                            ResourceLocation.withDefaultNamespace("item/empty_slot_hoe"),
-                            ResourceLocation.withDefaultNamespace("item/empty_slot_shovel")
+                            RoseGoldUtils.vanillaId("item/empty_armor_slot_helmet"),
+                            RoseGoldUtils.vanillaId("item/empty_slot_sword"),
+                            RoseGoldUtils.vanillaId("item/empty_armor_slot_chestplate"),
+                            RoseGoldUtils.vanillaId("item/empty_slot_pickaxe"),
+                            RoseGoldUtils.vanillaId("item/empty_armor_slot_leggings"),
+                            RoseGoldUtils.vanillaId("item/empty_slot_axe"),
+                            RoseGoldUtils.vanillaId("item/empty_armor_slot_boots"),
+                            RoseGoldUtils.vanillaId("item/empty_slot_hoe"),
+                            RoseGoldUtils.vanillaId("item/empty_slot_shovel")
                     ),
-                    List.of(ResourceLocation.withDefaultNamespace("item/empty_slot_ingot"))
+                    List.of(RoseGoldUtils.vanillaId("item/empty_slot_ingot"))
                     //? if >=1.21.3
                     ,properties
             )
@@ -133,7 +132,7 @@ public class ItemRegistry {
                 ResourceKey.create(Registries.ITEM, RoseGoldUtils.id(name)),
                 factory
         );
-        ITEMS.add(() -> item.get());
+        ITEMS.add(item::get);
         return item;
     }
 

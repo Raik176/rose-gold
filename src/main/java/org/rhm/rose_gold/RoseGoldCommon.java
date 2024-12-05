@@ -7,13 +7,13 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
+import org.jetbrains.annotations.NotNull;
 import org.rhm.rose_gold.item.ItemRegistry;
+
+import java.util.function.Supplier;
 
 //? if >=1.21.3 {
 import net.minecraft.world.item.ToolMaterial;
@@ -21,7 +21,6 @@ import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import java.util.EnumMap;
 import java.util.Set;
-import java.util.function.Supplier;
 
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvents;
@@ -29,6 +28,13 @@ import net.minecraft.sounds.SoundEvents;
 /*import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
+
+import java.util.Set;
+*///?}
+
+//? if >=1.21.4 {
+/*import net.minecraft.world.item.equipment.EquipmentAssets;
+import net.minecraft.resources.ResourceKey;
 *///?}
 
 public class RoseGoldCommon {
@@ -73,6 +79,9 @@ public class RoseGoldCommon {
 			1F,
 			0.0F,
 			ROSE_GOLD_REPAIR_MATERIALS,
+			//? >=1.21.4 {
+			/*ResourceKey.create(EquipmentAssets.ROOT_ID, RoseGoldUtils.id("rose_gold"))
+			*///?} else
 			RoseGoldUtils.id("rose_gold")
 	);
 	//?} else {
@@ -103,7 +112,7 @@ public class RoseGoldCommon {
 		}
 
 		@Override
-		public Ingredient getRepairIngredient() {
+		public @NotNull Ingredient getRepairIngredient() {
 			return Ingredient.of(ROSE_GOLD_REPAIR_MATERIALS);
 		}
 	};

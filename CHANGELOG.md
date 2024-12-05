@@ -1,1 +1,1 @@
-No changelog provided.
+Fix item models for 1.21.4
