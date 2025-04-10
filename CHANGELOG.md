@@ -1,1 +1,1 @@
-Fix item models for 1.21.4
+Fixed crashes on 1.21.4 and added support for 1.21, 1.21.1 and 1.21.5.

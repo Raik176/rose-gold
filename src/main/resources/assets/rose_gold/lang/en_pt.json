@@ -1,13 +1,13 @@
 {
   "tag.item.rose_gold.rose_gold_tool_materials": "Rose gold tool Plunder",
-  "itemGroup.rose_gold": "Rose gold hoard",
-  "item.rose_gold.rose_gold_alloy": "Rose gold alloy",
+  "itemGroup.rose_gold": "Rose Gold",
+  "item.rose_gold.rose_gold_alloy": "Rose Gold alloy",
   "item.rose_gold.rose_gold_sword": "Cutlass o' rose gold",
   "item.rose_gold.rose_gold_pickaxe": "Pickaxe o' rose gold",
   "item.rose_gold.rose_gold_axe": "Hatchet o' rose gold",
   "item.rose_gold.rose_gold_shovel": "Spade o' rose gold",
   "item.rose_gold.rose_gold_hoe": "Farmin' stick o' rose gold",
-  "item.rose_gold.rose_gold_upgrade_smithing_template": "Quartermaster's upgrade",
+  "item.rose_gold.rose_gold_upgrade_smithing_template": "Template o' smithing",
   "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "Iron gear",
   "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "Rose gold alloy",
   "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "Add armor o' iron, cutlass, o' tool",
@@ -15,5 +15,6 @@
   "item.rose_gold.rose_gold_helmet": "Helmet o' rose gold",
   "item.rose_gold.rose_gold_chestplate": "Chestplate o' rose gold",
   "item.rose_gold.rose_gold_leggings": "Greaves o' rose gold",
-  "item.rose_gold.rose_gold_boots": "Peg-leg o' rose gold"
+  "item.rose_gold.rose_gold_boots": "Peg-leg o' rose gold",
+  "upgrade.rose_gold.rose_gold_upgrade": "Quartermaster's upgrade"
 }

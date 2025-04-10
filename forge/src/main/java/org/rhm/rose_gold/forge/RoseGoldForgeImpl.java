@@ -1,6 +1,9 @@
 package org.rhm.rose_gold.forge;
 
 import com.mojang.datafixers.util.Pair;
+import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -18,6 +21,9 @@ import org.rhm.rose_gold.RoseGoldUtils;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
+
+//? if <1.21.2
+/*import net.minecraft.world.item.ArmorMaterial;*/
 
 public class RoseGoldForgeImpl implements RoseGoldBaseImpl {
     private static final DeferredRegister<Item> ITEM_REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, RoseGoldCommon.MOD_ID);
@@ -43,6 +49,18 @@ public class RoseGoldForgeImpl implements RoseGoldBaseImpl {
         );
         return () -> Pair.of(key, tab.get());
     }
+
+    //? if <1.21.2 {
+    /*@Override
+    public Supplier<Holder<ArmorMaterial>> registerArmorMaterial(String id, ArmorMaterial material) {
+        Holder<ArmorMaterial> armorMaterial = Registry.registerForHolder(
+                BuiltInRegistries.ARMOR_MATERIAL,
+                RoseGoldUtils.id(id),
+                material
+        );
+        return () -> armorMaterial;
+    }
+    *///?}
 
     public static void register(IEventBus eventBus) {
         ITEM_REGISTRY.register(eventBus);

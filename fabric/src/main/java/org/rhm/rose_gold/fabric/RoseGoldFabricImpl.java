@@ -2,7 +2,7 @@ package org.rhm.rose_gold.fabric;
 
 import com.mojang.datafixers.util.Pair;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.client.gui.screens.recipebook.RecipeBookComponent;
+import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -16,6 +16,9 @@ import org.rhm.rose_gold.RoseGoldUtils;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
+
+//? if <1.21.2
+/*import net.minecraft.world.item.ArmorMaterial;*/
 
 public class RoseGoldFabricImpl implements RoseGoldBaseImpl {
 
@@ -42,4 +45,16 @@ public class RoseGoldFabricImpl implements RoseGoldBaseImpl {
         ));
         return () -> pair;
     }
+
+    //? if <1.21.2 {
+    /*@Override
+    public Supplier<Holder<ArmorMaterial>> registerArmorMaterial(String id, ArmorMaterial material) {
+        Holder<ArmorMaterial> armorMaterial = Registry.registerForHolder(
+                BuiltInRegistries.ARMOR_MATERIAL,
+                RoseGoldUtils.id(id),
+                material
+        );
+        return () -> armorMaterial;
+    }
+    *///?}
 }

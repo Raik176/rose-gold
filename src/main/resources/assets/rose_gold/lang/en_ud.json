@@ -7,7 +7,7 @@
   "item.rose_gold.rose_gold_axe": "ǝxⱯ pꞁo⅁ ǝsoᴚ",
   "item.rose_gold.rose_gold_shovel": "ꞁǝʌoɥS pꞁo⅁ ǝsoᴚ",
   "item.rose_gold.rose_gold_hoe": "ǝoH pꞁo⅁ ǝsoᴚ",
-  "item.rose_gold.rose_gold_upgrade_smithing_template": "ǝpɐɹᵷd∩ pꞁo⅁ ǝsoᴚ",
+  "item.rose_gold.rose_gold_upgrade_smithing_template": "ǝʇɐꞁdɯǝ┴ ƃuᴉɥʇᴉɯS",
   "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "ʇuǝɯdᴉnbƎ uoɹI",
   "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "ʎoꞁꞁⱯ pꞁo⅁ ǝsoᴚ",
   "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "ꞁooʇ ɹo uodɐǝʍ ‘ɹoɯɹɐ uoɹᴉ ppⱯ",
@@ -15,5 +15,6 @@
   "item.rose_gold.rose_gold_helmet": "ʇǝɯꞁǝH pꞁo⅁ ǝsoᴚ",
   "item.rose_gold.rose_gold_chestplate": "ǝʇɐꞁdʇsǝɥƆ pꞁo⅁ ǝsoᴚ",
   "item.rose_gold.rose_gold_leggings": "sᵷuᴉᵷᵷǝꞀ pꞁo⅁ ǝsoᴚ",
-  "item.rose_gold.rose_gold_boots": "sʇooᗺ pꞁo⅁ ǝsoᴚ"
+  "item.rose_gold.rose_gold_boots": "sʇooᗺ pꞁo⅁ ǝsoᴚ",
+  "upgrade.rose_gold.rose_gold_upgrade": "ǝpɐɹᵷd∩ pꞁo⅁ ǝsoᴚ"
 }

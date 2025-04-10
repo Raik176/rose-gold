@@ -7,7 +7,7 @@
   "item.rose_gold.rose_gold_axe": "Machado de ouro rosé",
   "item.rose_gold.rose_gold_shovel": "Pá de ouro rosé",
   "item.rose_gold.rose_gold_hoe": "Enxada de ouro rosé",
-  "item.rose_gold.rose_gold_upgrade_smithing_template": "Melhoria de ouro rosé",
+  "item.rose_gold.rose_gold_upgrade_smithing_template": "Molde de Ferraria",
   "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "Equipamento de ferro",
   "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "Liga de ouro rosé",
   "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "Adicionar armadura de ferro, arma ou ferramenta",
@@ -15,5 +15,6 @@
   "item.rose_gold.rose_gold_helmet": "Capacete de ouro rosé",
   "item.rose_gold.rose_gold_chestplate": "Peitoral de ouro rosé",
   "item.rose_gold.rose_gold_leggings": "Calças de ouro rosé",
-  "item.rose_gold.rose_gold_boots": "Botas de ouro rosé"
+  "item.rose_gold.rose_gold_boots": "Botas de ouro rosé",
+  "upgrade.rose_gold.rose_gold_upgrade": "Melhoria de ouro rosé"
 }

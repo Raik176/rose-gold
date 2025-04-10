@@ -11,11 +11,12 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import org.jetbrains.annotations.NotNull;
+import org.rhm.rose_gold.item.ArmorMaterialRegistry;
 import org.rhm.rose_gold.item.ItemRegistry;
 
 import java.util.function.Supplier;
 
-//? if >=1.21.3 {
+//? if >=1.21.2 {
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
@@ -37,6 +38,7 @@ import java.util.Set;
 import net.minecraft.resources.ResourceKey;
 *///?}
 
+//TODO: cleanup
 public class RoseGoldCommon {
 	public static final String MOD_ID = "rose_gold";
 	public static RoseGoldBaseImpl impl;
@@ -54,71 +56,39 @@ public class RoseGoldCommon {
 							.when(LootItemRandomChanceCondition.randomChance(0.05f)))
 			.build();
 	public static final TagKey<Item> ROSE_GOLD_REPAIR_MATERIALS = TagKey.create(Registries.ITEM, RoseGoldUtils.id("rose_gold_tool_materials"));
-	//? if >=1.21.3 {
+	//? if >=1.21.2 {
 	public static final ToolMaterial ROSE_GOLD_TOOL_MATERIAL = new ToolMaterial(
 			BlockTags.INCORRECT_FOR_IRON_TOOL,
-			750,
-			7.25f,
-			2.5f,
-			10,
+			Constants.TOOL_DURABILITY,
+			Constants.TOOL_SPEED,
+			Constants.TOOL_ATTACK_DMG_BONUS,
+			Constants.COMMON_ENCHANTABILITY,
 			ROSE_GOLD_REPAIR_MATERIALS
-	);
-	@SuppressWarnings({"unchecked", "rawtypes"})
-	public static final ArmorMaterial ROSE_GOLD_ARMOR_MATERIAL = new ArmorMaterial(
-			22,
-			Util.make(new EnumMap(ArmorType.class),
-			(enumMap) -> {
-				enumMap.put(ArmorType.BOOTS, 2);
-				enumMap.put(ArmorType.LEGGINGS, 5);
-				enumMap.put(ArmorType.CHESTPLATE, 7);
-				enumMap.put(ArmorType.HELMET, 2);
-				enumMap.put(ArmorType.BODY, 9);
-			}),
-			10,
-			SoundEvents.ARMOR_EQUIP_GENERIC,
-			1F,
-			0.0F,
-			ROSE_GOLD_REPAIR_MATERIALS,
-			//? >=1.21.4 {
-			/*ResourceKey.create(EquipmentAssets.ROOT_ID, RoseGoldUtils.id("rose_gold"))
-			*///?} else
-			RoseGoldUtils.id("rose_gold")
 	);
 	//?} else {
 	/*public static final Tier ROSE_GOLD_TOOL_TIER = new Tier() {
 		@Override
-		public int getUses() {
-			return 750;
-		}
+		public int getUses() { return Constants.TOOL_DURABILITY; }
 
 		@Override
-		public float getSpeed() {
-			return 7.25f;
-		}
+		public float getSpeed() { return Constants.TOOL_SPEED; }
 
 		@Override
-		public float getAttackDamageBonus() {
-			return 2.5f;
-		}
+		public float getAttackDamageBonus() { return Constants.TOOL_ATTACK_DMG_BONUS; }
 
 		@Override
-		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_IRON_TOOL;
-		}
+		public @NotNull TagKey<Block> getIncorrectBlocksForDrops() { return BlockTags.INCORRECT_FOR_IRON_TOOL; }
 
 		@Override
-		public int getEnchantmentValue() {
-			return 10;
-		}
+		public int getEnchantmentValue() { return Constants.COMMON_ENCHANTABILITY; }
 
 		@Override
-		public @NotNull Ingredient getRepairIngredient() {
-			return Ingredient.of(ROSE_GOLD_REPAIR_MATERIALS);
-		}
+		public @NotNull Ingredient getRepairIngredient() { return Ingredient.of(ROSE_GOLD_REPAIR_MATERIALS); }
 	};
 	*///?}
 
 	public static void init() {
+		ArmorMaterialRegistry.init();
 		ItemRegistry.init();
 	}
 }

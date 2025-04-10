@@ -1,11 +1,17 @@
 plugins {
     id("dev.kikugie.stonecutter")
-    id("dev.architectury.loom") version "1.7-SNAPSHOT" apply false
+    id("dev.kikugie.postprocess.j52j") version "2.1-beta.4" apply false
+    id("dev.architectury.loom") version "1.10-SNAPSHOT" apply false
     id("architectury-plugin") version "3.4-SNAPSHOT" apply false
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
+    id("me.modmuss50.mod-publish-plugin") version "0.7.4" apply false
 }
-stonecutter active "1.21.3" /* [SC] DO NOT EDIT */
-stonecutter.automaticPlatformConstants = true
+stonecutter active "1.21.2" /* [SC] DO NOT EDIT */
+
+/*
+i tried migrating to the 0.7 alpha but stonecutter nuking the entirety of registerChiseled without
+giving any explanation is kind of shitty, and im too tired to figure this shit out myself lol
+ */
 
 for (it in listOf("Mods", "Github", "Modrinth", "Curseforge")) {
     stonecutter registerChiseled tasks.register("chiseledPublish$it", stonecutter.chiseled) {
@@ -53,7 +59,7 @@ for (it in stonecutter.tree.nodes) {
     if (it.metadata != stonecutter.current || it.branch.id.isEmpty()) continue
     val types = listOf("Client", "Server")
     val loader = it.branch.id.upperCaseFirst()
-    for (type in types) it.tasks.register("runActive$type$loader") {
+    for (type in types) it.project.tasks.register("runActive$type$loader") {
         group = "project"
         dependsOn("run$type")
     }

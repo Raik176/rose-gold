@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:smithing_transform",
+  //? if <1.21.2 {
+  /*"addition": {
+    "tag": "rose_gold:rose_gold_tool_materials"
+  },
+  "base": {
+    "item": "minecraft:iron_shovel"
+  },
+  "template": {
+    "item": "rose_gold:rose_gold_upgrade_smithing_template"
+  },
+  *///?} else {
+  "addition": "#rose_gold:rose_gold_tool_materials",
+  "base": "minecraft:iron_shovel",
+  "template": "rose_gold:rose_gold_upgrade_smithing_template",
+  //?}
+  "result": {
+    "count": 1,
+    "id": "rose_gold:rose_gold_shovel"
+  }
+}

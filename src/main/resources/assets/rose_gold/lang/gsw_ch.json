@@ -7,13 +7,14 @@
   "item.rose_gold.rose_gold_axe": "Roségoldaxt",
   "item.rose_gold.rose_gold_shovel": "Roségoldschufle",
   "item.rose_gold.rose_gold_hoe": "Roségoldhacke",
-  "item.rose_gold.rose_gold_upgrade_smithing_template": "Roségoldufwertig",
+  "item.rose_gold.rose_gold_upgrade_smithing_template": "Schmiedvorlage",
   "item.rose_gold.smithing_template.rose_gold_upgrade.applies_to": "Eisenusrüstung",
   "item.rose_gold.smithing_template.rose_gold_upgrade.ingredients": "Roségoldlegierung",
-  "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "Rüstigsteil, Werkzüg oder Schwert us Ise hinzuefüege",
+  "item.rose_gold.smithing_template.rose_gold_upgrade.base_slot_description": "Rüstigsteil, Werkzüg oder Schwert us Iise hinzuefüege",
   "item.rose_gold.smithing_template.rose_gold_upgrade.additions_slot_description": "Roségoldlegierung hinzuefüege",
   "item.rose_gold.rose_gold_helmet": "Roségoldhelm",
   "item.rose_gold.rose_gold_chestplate": "Roségoldlegierungharnisch",
   "item.rose_gold.rose_gold_leggings": "Roségoldbeischutz",
-  "item.rose_gold.rose_gold_boots": "Roségoldstiefel"
+  "item.rose_gold.rose_gold_boots": "Roségoldstiefel",
+  "upgrade.rose_gold.rose_gold_upgrade": "Roségoldufwertig"
 }

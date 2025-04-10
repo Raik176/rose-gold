@@ -4,10 +4,12 @@ import net.fabricmc.loom.task.RemapJarTask
 import org.gradle.kotlin.dsl.version
 
 plugins {
+    id("dev.kikugie.stonecutter")
     id("dev.architectury.loom")
     id("architectury-plugin")
     id("com.github.johnrengelman.shadow")
-    id("me.modmuss50.mod-publish-plugin") version "0.7.4"
+    id ("dev.kikugie.postprocess.j52j")
+    id("me.modmuss50.mod-publish-plugin")
 }
 
 val loader = prop("loom.platform")!!
@@ -16,7 +18,7 @@ if (minecraft == "1.21.2") // forge only supports 1.21.3 and neoforge only suppo
     minecraft = "1.21.3"
 val common: Project = requireNotNull(stonecutter.node.sibling("")) {
     "No common project for $project"
-}
+}.project
 
 version = "${mod.version}+$minecraft"
 group = "${mod.group}.$loader"
@@ -59,6 +61,10 @@ dependencies {
 
     commonBundle(project(common.path, "namedElements")) { isTransitive = false }
     shadowBundle(project(common.path, "transformProductionForge")) { isTransitive = false }
+}
+
+j52j {
+    prettyPrint = true
 }
 
 loom {

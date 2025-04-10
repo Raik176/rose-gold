@@ -2,19 +2,20 @@
 
 import net.fabricmc.loom.task.RemapJarTask
 
-
 plugins {
+    id("dev.kikugie.stonecutter")
     id("dev.architectury.loom")
     id("architectury-plugin")
     id("com.github.johnrengelman.shadow")
-    id("me.modmuss50.mod-publish-plugin") version "0.7.4"
+    id ("dev.kikugie.postprocess.j52j")
+    id("me.modmuss50.mod-publish-plugin")
 }
 
 val loader = prop("loom.platform")!!
 val minecraft: String = stonecutter.current.version
 val common: Project = requireNotNull(stonecutter.node.sibling("")) {
     "No common project for $project"
-}
+}.project
 
 version = "${mod.version}+$minecraft"
 group = "${mod.group}.$loader"
@@ -57,6 +58,10 @@ dependencies {
 
     commonBundle(project(common.path, "namedElements")) { isTransitive = false }
     shadowBundle(project(common.path, "transformProductionNeoForge")) { isTransitive = false }
+}
+
+j52j {
+    prettyPrint = true
 }
 
 loom {
