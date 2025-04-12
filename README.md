@@ -46,16 +46,14 @@ Iron equipment can be upgraded into rose gold equipment using a single alloy, up
 </details>
 
 # Credits
-  - Assets: all of the assets are from the [Additional Additions](https://github.com/Additional-Mods/additionaladditions) mod.
+  - Assets: all the assets are from the [Additional Additions](https://github.com/Additional-Mods/additionaladditions) mod.
 
-# Supporting me
-**I do not accept donations.**
+# Want to support the Mod?
+Thank you so much for using this mod! While I don't accept donations, your support in other ways means the world and helps the mod grow.
 
-If you want to support me, tell everyone about this mod!
+### How You Can Help Spread the Word:
+- **Showcase It**: Create a video review/showcase, or even a let's play featuring the mod.
+- **Recommend It**: Tell friends who might enjoy it, or share it in relevant online communities (but be considerate and avoid spamming).
+- **Include It in a Modpack**: Adding it to your modpack is a great way to help others discover it. 
 
-Just by advertising, you will support me and this mod. If more people know about this mod, it will have more downloads, and more downloads motivate authors. **Remember, advertisements shouldn't be annoying or intrusive!**
-
-## How?
-* Make a video review / demonstration / advertisement
-* Tell your friends about this mod
-* Make a modpack with this mod in it
+Every share makes a difference. Thank you for helping this mod thrive!

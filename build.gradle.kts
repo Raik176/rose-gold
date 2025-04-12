@@ -1,5 +1,3 @@
-import org.gradle.kotlin.dsl.version
-
 plugins {
     id("dev.kikugie.stonecutter")
     id("dev.architectury.loom")
@@ -37,6 +35,12 @@ dependencies {
 
 j52j {
     prettyPrint = true
+}
+
+tasks.jar {
+    from(rootProject.file("LICENSE")) {
+        rename { "${mod.id}_LICENSE.md" }
+    }
 }
 
 loom {
